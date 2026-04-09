@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "PDF Detector & Downloader",
+  "version": "1.0",
+  "description": "Automatically detect and download PDF files from any website.",
+  "permissions": [
+    "webRequest",
+    "storage",
+    "downloads",
+    "tabs",
+    "webNavigation"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Detected PDFs",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}
